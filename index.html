@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVEEN KOPPISETTI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        img.profile-pic {
+            max-width: 150px;
+            max-height: 150px;
+            object-fit: cover;
+        }
+
+        img.project-img {
+            max-width: 300px;
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        img.certificate-img {
+            max-width: 400px;
+            max-height: 250px;
+            object-fit: contain;
+        }
+
+        body {
+            background: linear-gradient(to bottom right, #f9fafb, #e5e7eb);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: linear-gradient(to bottom right, #1f2937, #374151);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <link rel="preload" as="image"
+        href="https://res.cloudinary.com/drc8bufjn/image/upload/v1751134106/portfolios/kok0ntukm6oriidlpe7u.jpg" />
+    <link rel="preload" as="image"
+        href="https://res.cloudinary.com/drc8bufjn/image/upload/v1751134648/portfolios/lfgb8zmledpilwobi1fp.png" />
+    <link rel="preload" as="image"
+        href="https://res.cloudinary.com/drc8bufjn/image/upload/v1751134763/portfolios/srp50o7hpiemu8wuietw.jpg" />
+    <link rel="preload" as="image"
+        href="https://res.cloudinary.com/drc8bufjn/image/upload/v1751134903/portfolios/wxhkg50bsekvuj27xixt.png" />
+    <link rel="preload" as="image"
+        href="https://res.cloudinary.com/drc8bufjn/image/upload/v1751135198/portfolios/pqxxcxfe69cukdtsx3ek.jpg" />
+    <link rel="preload" as="image"
+        href="https://res.cloudinary.com/drc8bufjn/image/upload/v1751135423/portfolios/gvadc6oegf2cte7knmin.png" />
+    <link rel="preload" as="image"
+        href="https://res.cloudinary.com/drc8bufjn/image/upload/v1751135515/portfolios/qbmqciopk7rtg4pgogdd.png" />
+    <link rel="preload" as="image"
+        href="https://res.cloudinary.com/drc8bufjn/image/upload/v1751135654/portfolios/dkxm4mtik8xbxwimu5xt.png" />
+    <link rel="preload" as="image"
+        href="https://res.cloudinary.com/drc8bufjn/image/upload/v1751135799/portfolios/gcdzjbd4peguzbrlddfk.png" />
+    <div class="min-h-screen bg-gradient-to-b from-gray-100 to-purple-50 text-gray-800 font-sans">
+        <style>
+            @keyframes float {
+                0% {
+                    transform: translateY(0px);
+                }
+
+                50% {
+                    transform: translateY(-10px);
+                }
+
+                100% {
+                    transform: translateY(0px);
+                }
+            }
+
+            .float-animation {
+                animation: float 3s ease-in-out infinite;
+            }
+
+            @keyframes gradient-shift {
+                0% {
+                    background-position: 0% 50%;
+                }
+
+                50% {
+                    background-position: 100% 50%;
+                }
+
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            .gradient-text {
+                background: linear-gradient(45deg, #6B46C1, #DB2777, #6B46C1);
+                background-size: 200% auto;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                animation: gradient-shift 3s linear infinite;
+            }
+
+            .hover-scale {
+                transition: transform 0.3s ease;
+            }
+
+            .hover-scale:hover {
+                transform: scale(1.03);
+            }
+        </style>
+        <header class="bg-white/80 backdrop-blur-sm text-gray-800 py-4 sticky top-0 z-50 shadow-sm">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <h1 class="text-3xl font-bold gradient-text">NAVEEN KOPPISETTI</h1><button id="menu-toggle"
+                    class="sm:hidden text-gray-800 focus:outline-none hover:bg-purple-100 p-2 rounded-full transition-colors duration-300"
+                    aria-label="Open menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg></button>
+                <nav class="hidden sm:flex sm:flex-row sm:space-x-6"><a href="#profile"
+                        class="text-lg font-medium hover:text-purple-600 hover:scale-110 transition-all duration-300 ease-in-out">About</a><a
+                        href="#skills"
+                        class="text-lg font-medium hover:text-purple-600 hover:scale-110 transition-all duration-300 ease-in-out">Skills</a><a
+                        href="#projects"
+                        class="text-lg font-medium hover:text-purple-600 hover:scale-110 transition-all duration-300 ease-in-out">Projects</a><a
+                        href="#certificates"
+                        class="text-lg font-medium hover:text-purple-600 hover:scale-110 transition-all duration-300 ease-in-out">Certificates</a><a
+                        href="#resume"
+                        class="text-lg font-medium hover:text-purple-600 hover:scale-110 transition-all duration-300 ease-in-out">Resume</a><a
+                        href="#contact"
+                        class="text-lg font-medium hover:text-purple-600 hover:scale-110 transition-all duration-300 ease-in-out">Contact</a>
+                </nav>
+            </div>
+            <div id="mobile-menu"
+                class="sm:hidden bg-white/90 backdrop-blur-sm text-gray-800 flex-col space-y-2 px-4 py-4 absolute top-full left-0 right-0 z-40 shadow-lg hidden transition-all duration-500 ease-in-out">
+                <a href="#profile"
+                    class="text-lg font-medium hover:text-purple-600 hover:scale-105 transition-all duration-300 py-2">About</a><a
+                    href="#skills"
+                    class="text-lg font-medium hover:text-purple-600 hover:scale-105 transition-all duration-300 py-2">Skills</a><a
+                    href="#projects"
+                    class="text-lg font-medium hover:text-purple-600 hover:scale-105 transition-all duration-300 py-2">Projects</a><a
+                    href="#certificates"
+                    class="text-lg font-medium hover:text-purple-600 hover:scale-105 transition-all duration-300 py-2">Certificates</a><a
+                    href="#resume"
+                    class="text-lg font-medium hover:text-purple-600 hover:scale-105 transition-all duration-300 py-2">Resume</a><a
+                    href="#contact"
+                    class="text-lg font-medium hover:text-purple-600 hover:scale-105 transition-all duration-300 py-2">Contact</a>
+            </div>
+        </header>
+        <main class="container mx-auto px-4 py-12">
+            <section id="profile" class="mb-16 scroll-mt-24">
+                <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg hover-scale">
+                    <h2 class="text-4xl font-bold mb-8 text-center gradient-text">About Me</h2>
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="float-animation"><img
+                                src="https://res.cloudinary.com/drc8bufjn/image/upload/v1751134106/portfolios/kok0ntukm6oriidlpe7u.jpg"
+                                alt="Profile"
+                                class="w-48 h-48 rounded-full object-cover border-4 border-white shadow-xl" /></div>
+                        <div class="text-center md:text-left">
+                            <h3 class="text-3xl font-bold mb-4 gradient-text">NAVEEN KOPPISETTI</h3>
+                            <p class="mb-6 text-gray-700 leading-relaxed">I&#x27;m a passionate Computer Science student
+                                at Lakireddy Bali Reddy College of Engineering, specializing in full-stack development
+                                with the MERN stack. I love building scalable, user-friendly web applications and
+                                exploring technologies like DevOps and cloud computing. My goal is to create impactful
+                                solutions that solve real-world problems.</p>
+                            <div class="flex flex-col md:flex-row md:space-x-6 space-y-3 md:space-y-0">
+                                <p><strong class="text-purple-600">Email:</strong> <a
+                                        href="mailto:22761A05G1@lbrce.ac.in"
+                                        class="text-pink-600 hover:text-purple-600">22761A05G1@lbrce.ac.in</a></p>
+                                <p><strong class="text-purple-600">GitHub:</strong> <a
+                                        href="https://github.com/NaveenKoppisetti" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-pink-600 hover:text-purple-600">NaveenKoppisetti</a></p>
+                                <p><strong class="text-purple-600">LinkedIn:</strong> <a
+                                        href="https://www.linkedin.com/in/koppisetti-naveen/" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-pink-600 hover:text-purple-600">LinkedIn</a></p>
+                                <p><strong class="text-purple-600">WhatsApp:</strong> <a
+                                        href="https://wa.me/+919908170234" target="_blank" rel="noopener noreferrer"
+                                        class="text-pink-600 hover:text-purple-600">Contact via WhatsApp</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class="mb-16 scroll-mt-24">
+                <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg hover-scale">
+                    <h2 class="text-4xl font-bold mb-8 text-center gradient-text">Skills</h2>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <div
+                            class="bg-gradient-to-br from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-shadow">
+                            ☕ Java</div>
+                        <div
+                            class="bg-gradient-to-br from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-shadow">
+                            🌟 JavaScript</div>
+                        <div
+                            class="bg-gradient-to-br from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-shadow">
+                            ⚛ React</div>
+                        <div
+                            class="bg-gradient-to-br from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-shadow">
+                            🟢 Node.js</div>
+                        <div
+                            class="bg-gradient-to-br from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-shadow">
+                            🖥 Express</div>
+                        <div
+                            class="bg-gradient-to-br from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-shadow">
+                            🍃 MongoDB</div>
+                        <div
+                            class="bg-gradient-to-br from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-shadow">
+                            ☕ Spring Boot</div>
+                        <div
+                            class="bg-gradient-to-br from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-shadow">
+                            🗄 SQL</div>
+                        <div
+                            class="bg-gradient-to-br from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-shadow">
+                            🗄 MySQL</div>
+                        <div
+                            class="bg-gradient-to-br from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-shadow">
+                            📄 HTML</div>
+                        <div
+                            class="bg-gradient-to-br from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-shadow">
+                            🎨 CSS</div>
+                        <div
+                            class="bg-gradient-to-br from-purple-500 to-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-shadow">
+                            💨 Tailwind CSS</div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="mb-16 scroll-mt-24">
+                <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg hover-scale">
+                    <h2 class="text-4xl font-bold mb-8 text-center gradient-text">Projects</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div
+                            class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow hover-scale">
+                            <img src="https://res.cloudinary.com/drc8bufjn/image/upload/v1751134648/portfolios/lfgb8zmledpilwobi1fp.png"
+                                alt="Blood Bank Management System" class="w-full h-48 object-cover" />
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2 gradient-text">Blood Bank Management System</h3>
+                                <p class="mb-4 text-gray-700">A web-based application designed to streamline the
+                                    management of blood donations, donor records, and inventory.
+                                    Core Features:
+                                    Donor Management: Add, update, and track donor information efficiently.
+                                    Inventory Control: Real-time monitoring of blood availability and stock levels.
+                                    Search &amp; Request: Quick search for blood types and management of blood requests.
+                                    Technologies Used: Java Servlets, Apache Tomcat, MySQL</p>
+                                <div class="flex space-x-4"><a
+                                        href="https://github.com/NaveenKoppisetti/BloodBankManagement.git"
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="text-purple-600 hover:text-pink-600 font-medium">GitHub</a></div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow hover-scale">
+                            <img src="https://res.cloudinary.com/drc8bufjn/image/upload/v1751134763/portfolios/srp50o7hpiemu8wuietw.jpg"
+                                alt="LearnHub – Your Center for Skill Enhancement" class="w-full h-48 object-cover" />
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2 gradient-text">LearnHub – Your Center for Skill
+                                    Enhancement</h3>
+                                <p class="mb-4 text-gray-700">A full-stack educational platform enabling users to access
+                                    video courses, post blogs, and track learning progress.
+                                    Developed user authentication with role-based dashboards for learners and
+                                    instructors.
+                                    Implemented video course management and real-time blog publishing features.
+                                    Designed personalized dashboards to track user progress and recommended courses.
+                                    Ensured smooth user experience with effective error handling and notifications.
+                                    Technologies Used: React, Redux, Tailwind CSS, Node.js, Express, MongoDB, JWT</p>
+                                <div class="flex space-x-4"><a
+                                        href="https://github.com/NaveenKoppisetti/LearnHub-Your-Center-for-Skill-Enhancement.git"
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="text-purple-600 hover:text-pink-600 font-medium">GitHub</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="certificates" class="mb-16 scroll-mt-24">
+                <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg hover-scale">
+                    <h2 class="text-4xl font-bold mb-8 text-center gradient-text">Certificates</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div
+                            class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow hover-scale">
+                            <img src="https://res.cloudinary.com/drc8bufjn/image/upload/v1751134903/portfolios/wxhkg50bsekvuj27xixt.png"
+                                alt="Biztron Softech Solutions" class="w-full h-48 object-contain bg-white p-4" />
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2 gradient-text">Biztron Softech Solutions</h3>
+                                <p class="mb-2 text-gray-700">Date: <!-- -->7/20/2024</p>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow hover-scale">
+                            <img src="https://res.cloudinary.com/drc8bufjn/image/upload/v1751135198/portfolios/pqxxcxfe69cukdtsx3ek.jpg"
+                                alt="EduSkills - Short Term Internship"
+                                class="w-full h-48 object-contain bg-white p-4" />
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2 gradient-text">EduSkills - Short Term Internship</h3>
+                                <p class="mb-2 text-gray-700">Date: <!-- -->1/10/2025</p>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow hover-scale">
+                            <img src="https://res.cloudinary.com/drc8bufjn/image/upload/v1751135423/portfolios/gvadc6oegf2cte7knmin.png"
+                                alt="CS0131EN: Software Engineering Basics For Everyone"
+                                class="w-full h-48 object-contain bg-white p-4" />
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2 gradient-text">CS0131EN: Software Engineering Basics
+                                    For Everyone</h3>
+                                <p class="mb-2 text-gray-700">Date: <!-- -->6/6/2024</p><a
+                                    href="https://courses.edx.org/certificates/1947dfa2adb0408cb6129a0fd6ab8b10"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="text-purple-600 hover:text-pink-600 font-medium">View Credential</a>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow hover-scale">
+                            <img src="https://res.cloudinary.com/drc8bufjn/image/upload/v1751135515/portfolios/qbmqciopk7rtg4pgogdd.png"
+                                alt="CC0101EN: Introduction to Cloud Computing"
+                                class="w-full h-48 object-contain bg-white p-4" />
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2 gradient-text">CC0101EN: Introduction to Cloud
+                                    Computing</h3>
+                                <p class="mb-2 text-gray-700">Date: <!-- -->6/3/2024</p><a
+                                    href="https://courses.edx.org/certificates/21e6913343b744d08da100d7b0f30339"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="text-purple-600 hover:text-pink-600 font-medium">View Credential</a>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow hover-scale">
+                            <img src="https://res.cloudinary.com/drc8bufjn/image/upload/v1751135654/portfolios/dkxm4mtik8xbxwimu5xt.png"
+                                alt="Technical Education reforms in AndhrA pradesh innovation &amp; entrepreneurship development"
+                                class="w-full h-48 object-contain bg-white p-4" />
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2 gradient-text">Technical Education reforms in AndhrA
+                                    pradesh innovation &amp; entrepreneurship development</h3>
+                                <p class="mb-2 text-gray-700">Date: <!-- -->1/18/2024</p>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow hover-scale">
+                            <img src="https://res.cloudinary.com/drc8bufjn/image/upload/v1751135799/portfolios/gcdzjbd4peguzbrlddfk.png"
+                                alt="Guest Lecture on &quot;Generative AI&quot;"
+                                class="w-full h-48 object-contain bg-white p-4" />
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2 gradient-text">Guest Lecture on &quot;Generative
+                                    AI&quot;</h3>
+                                <p class="mb-2 text-gray-700">Date: <!-- -->3/20/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="resume" class="mb-16 scroll-mt-24">
+                <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg hover-scale text-center">
+                    <h2 class="text-4xl font-bold mb-8 gradient-text">Resume</h2>
+                    <div class="flex justify-center"><a
+                            href="https://res.cloudinary.com/drc8bufjn/raw/upload/v1752925688/portfolios/ftkgm0kpbuq8grvi8lqf.pdf"
+                            download="NAVEEN KOPPISETTI_Resume.pdf"
+                            class="bg-gradient-to-br from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-105">Download
+                            Resume (PDF)</a></div>
+                </div>
+            </section>
+            <section id="contact" class="mb-16 scroll-mt-24">
+                <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg hover-scale text-center">
+                    <h2 class="text-4xl font-bold mb-8 gradient-text">Contact Me</h2>
+                    <div class="flex justify-center space-x-8 mb-8"><a href="mailto:22761A05G1@lbrce.ac.in"
+                            class="text-purple-600 hover:text-pink-600 hover:scale-110 transition-transform"><svg
+                                xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg></a><a href="https://github.com/NaveenKoppisetti" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-purple-600 hover:text-pink-600 hover:scale-110 transition-transform"><svg
+                                xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                                </path>
+                            </svg></a><a href="https://www.linkedin.com/in/koppisetti-naveen/" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-purple-600 hover:text-pink-600 hover:scale-110 transition-transform"><svg
+                                xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.395-2.586 7-2.777 7 2.476v6.759z">
+                                </path>
+                            </svg></a></div>
+                    <p class="text-gray-700">Feel free to reach out for opportunities or collaborations!</p>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-white/80 backdrop-blur-sm text-gray-800 py-6 border-t border-gray-200">
+            <div class="container mx-auto px-4 text-center">
+                <p>© <!-- -->2025<!-- -->
+                    <!-- -->NAVEEN KOPPISETTI<!-- -->. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+
+            if (menuToggle && mobileMenu && menuIcon) {
+                menuToggle.addEventListener('click', () => {
+                    const isHidden = mobileMenu.classList.contains('hidden');
+                    mobileMenu.classList.toggle('hidden', !isHidden);
+                    mobileMenu.classList.toggle('flex', isHidden);
+                    menuIcon.setAttribute('d', isHidden ?
+                        'M6 18L18 6M6 6l12 12' :
+                        'M4 6h16M4 12h16M4 18h16'
+                    );
+                });
+
+                document.querySelectorAll('#mobile-menu a').forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const href = link.getAttribute('href');
+                        const target = document.querySelector(href);
+                        if (target) {
+                            const headerOffset = document.querySelector('header')?.offsetHeight || 0;
+                            const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+                            window.scrollTo({
+                                top: elementPosition - headerOffset,
+                                behavior: 'smooth'
+                            });
+                            mobileMenu.classList.add('hidden');
+                            mobileMenu.classList.remove('flex');
+                            menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                        }
+                    });
+                });
+            }
+
+            document.querySelectorAll('img').forEach(img => {
+                img.addEventListener('error', (e) => {
+                    e.target.style.display = 'none';
+                    const parent = e.target.parentElement;
+                    const fallback = document.createElement('div');
+                    fallback.className = 'w-full h-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-400 rounded';
+                    fallback.textContent = 'Image Not Available';
+                    parent.appendChild(fallback);
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
