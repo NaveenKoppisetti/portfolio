@@ -589,11 +589,51 @@
       background: linear-gradient(90deg, var(--green), var(--accent));
     }
 
+    .project-banner.violet {
+      background: linear-gradient(90deg, var(--pink), var(--gold));
+    }
+
+    .project-card.featured {
+      border-color: rgba(245, 158, 11, 0.35);
+      background: linear-gradient(180deg, rgba(245, 158, 11, 0.05), var(--card) 60px);
+    }
+
+    .project-card.featured:hover {
+      border-color: var(--gold);
+    }
+
     .project-body {
       padding: 24px;
       flex: 1;
       display: flex;
       flex-direction: column;
+    }
+
+    .project-top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+    }
+
+    .project-top-row .project-emoji {
+      margin-bottom: 0;
+    }
+
+    .project-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      padding: 4px 10px;
+      border-radius: 20px;
     }
 
     .project-emoji {
@@ -745,6 +785,8 @@
       font-size: 12px;
       color: var(--muted);
       padding-top: 2px;
+      padding-right: 28px;
+      white-space: nowrap;
     }
 
     .edu-dot {
@@ -1184,7 +1226,7 @@
             <div class="stat-label">PROJECTS</div>
           </div>
           <div class="stat-item">
-            <div class="stat-num">8.5</div>
+            <div class="stat-num">8.25</div>
             <div class="stat-label">CGPA</div>
           </div>
           <div class="stat-item">
@@ -1284,13 +1326,6 @@
             <div class="knowledge-item">
               <div class="knowledge-dot done"></div>
               <div>
-                <div class="knowledge-label">REST API Design &amp; JWT Auth</div>
-                <div class="knowledge-status">✦ Hands-on</div>
-              </div>
-            </div>
-            <div class="knowledge-item">
-              <div class="knowledge-dot done"></div>
-              <div>
                 <div class="knowledge-label">DSA in Java</div>
                 <div class="knowledge-status">✦ Hands-on</div>
               </div>
@@ -1298,7 +1333,7 @@
             <div class="knowledge-item">
               <div class="knowledge-dot done"></div>
               <div>
-                <div class="knowledge-label">MERN Stack</div>
+                <div class="knowledge-label">REST API Design &amp; JWT Auth</div>
                 <div class="knowledge-status">✦ Hands-on</div>
               </div>
             </div>
@@ -1307,13 +1342,6 @@
               <div>
                 <div class="knowledge-label">SQL &amp; NoSQL Databases</div>
                 <div class="knowledge-status">✦ Hands-on</div>
-              </div>
-            </div>
-            <div class="knowledge-item">
-              <div class="knowledge-dot learning"></div>
-              <div>
-                <div class="knowledge-label">AI / LLM Concepts (RAG, Embeddings)</div>
-                <div class="knowledge-status">◆ Conceptual</div>
               </div>
             </div>
             <div class="knowledge-item">
@@ -1328,6 +1356,13 @@
               <div>
                 <div class="knowledge-label">Spring Boot Microservices</div>
                 <div class="knowledge-status">◆ Learning</div>
+              </div>
+            </div>
+            <div class="knowledge-item">
+              <div class="knowledge-dot learning"></div>
+              <div>
+                <div class="knowledge-label">AI / LLM Concepts (RAG, Embeddings)</div>
+                <div class="knowledge-status">◆ Conceptual</div>
               </div>
             </div>
           </div>
@@ -1373,6 +1408,7 @@
             ⚙️</div>
           <div class="skill-card-title">Backend</div>
           <div class="skill-tags">
+            <span class="stag">JDBC (Java Database Connectivity)</span>
             <span class="stag">Spring Boot</span>
             <span class="stag">Spring MVC</span>
             <span class="stag">REST APIs</span>
@@ -1416,6 +1452,7 @@
           <div class="skill-card-title">DSA</div>
           <div class="skill-tags">
             <span class="stag">Arrays</span>
+            <span class="stag">Strings</span>
             <span class="stag">Linked Lists</span>
             <span class="stag">Stacks &amp; Queues</span>
             <span class="stag">Trees</span>
@@ -1442,29 +1479,43 @@
   <section id="projects">
     <div class="container">
       <div class="fade-in">
-        <div class="section-tag">// projects</div>
+        <div class="section-tag">//PROJECTS</div>
         <h2 class="section-title">Things I've Built</h2>
         <p class="section-sub">Real-world applications covering full-stack development, AI integration, and more.</p>
       </div>
       <div class="projects-grid">
 
-        <div class="project-card fade-in">
-          <div class="project-banner"></div>
+        <div class="project-card featured fade-in">
+          <div class="project-banner violet"></div>
           <div class="project-body">
-            <div class="project-emoji">🎓</div>
-            <div class="project-title">LearnHub — Skill Enhancement Platform</div>
-            <div class="project-desc">Full-stack learning platform with role-based dashboards for students and admins.
-              Implements JWT authentication and secure REST APIs for user management with a scalable backend
-              architecture.</div>
+            <div class="project-top-row">
+              <div class="project-emoji">🎓</div>
+              <span class="project-badge">✨ Latest</span>
+            </div>
+            <div class="project-title">Student Management System</div>
+            <div class="project-desc">Secure, full-stack student management platform built on the MVC pattern.
+              Supports registration, login, profile updates, and account deletion, backed by SHA-256 password
+              hashing, session &amp; cookie management, an authentication servlet filter, duplicate-email validation,
+              and custom 404/500 error pages — all wrapped in a responsive Bootstrap 5 dashboard.</div>
             <div class="project-stack">
-              <span class="pstag">React</span>
-              <span class="pstag">Node.js</span>
-              <span class="pstag">MongoDB</span>
-              <span class="pstag">JWT</span>
-              <span class="pstag">REST APIs</span>
+              <span class="pstag">Java 21</span>
+              <span class="pstag">Jakarta Servlets</span>
+              <span class="pstag">JSP</span>
+              <span class="pstag">JDBC</span>
+              <span class="pstag">MySQL</span>
+              <span class="pstag">Bootstrap 5</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/NaveenKoppisetti/LearnHub-Your-Center-for-Skill-Enhancement" target="_blank"
+              <a href="https://studentmanagementsystem-gws5.onrender.com/register.jsp" target="_blank"
+                class="project-link">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Live Demo
+              </a>
+              <a href="https://github.com/NaveenKoppisetti/StudentManagementSystem" target="_blank"
                 class="project-link">
                 <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                   <path
@@ -1492,6 +1543,15 @@
               <span class="pstag">CSS</span>
             </div>
             <div class="project-links">
+
+              <a href="https://bloodbankmanagementsystem-sszt.onrender.com/" target="_blank" s class="project-link">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Live Demo
+              </a>
               <a href="https://github.com/NaveenKoppisetti/BloodBankManagement" target="_blank" class="project-link">
                 <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                   <path
@@ -1511,7 +1571,6 @@
             <div class="project-desc">Responsive personal portfolio showcasing projects and skills. Built with the MERN
               stack following modern UI/UX principles and deployed live via GitHub Pages.</div>
             <div class="project-stack">
-              <span class="pstag">MERN Stack</span>
               <span class="pstag">Responsive Design</span>
               <span class="pstag">GitHub Pages</span>
             </div>
@@ -1523,6 +1582,34 @@
                   <line x1="10" y1="14" x2="21" y2="3" />
                 </svg>
                 Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-banner"></div>
+          <div class="project-body">
+            <div class="project-emoji">👨‍💻</div>
+            <div class="project-title">LearnHub — Skill Enhancement Platform</div>
+            <div class="project-desc">Full-stack learning platform with role-based dashboards for students and admins.
+              Implements JWT authentication and secure REST APIs for user management with a scalable backend
+              architecture.</div>
+            <div class="project-stack">
+              <span class="pstag">React</span>
+              <span class="pstag">Node.js</span>
+              <span class="pstag">MongoDB</span>
+              <span class="pstag">JWT</span>
+              <span class="pstag">REST APIs</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/NaveenKoppisetti/LearnHub-Your-Center-for-Skill-Enhancement" target="_blank"
+                class="project-link">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                </svg>
+                GitHub
               </a>
             </div>
           </div>
@@ -1591,6 +1678,8 @@
     </div>
   </section>
 
+
+
   <!-- EDUCATION -->
   <section id="education">
     <div class="container">
@@ -1601,12 +1690,12 @@
       </div>
       <div class="edu-timeline fade-in">
         <div class="edu-item">
-          <div class="edu-year">Sep 2022<br>Jun 2026</div>
+          <div class="edu-year">Sep 2022<br>July 2026</div>
           <div class="edu-dot"></div>
           <div class="edu-content">
             <div class="edu-school">Lakireddy Bali Reddy College of Engineering</div>
             <div class="edu-degree">B.Tech in Computer Science &amp; Engineering · Mylavaram · 2022 - 2026</div>
-            <span class="edu-score">CGPA: 8.5</span>
+            <span class="edu-score">CGPA: 8.25</span>
           </div>
         </div>
         <div class="edu-item">
@@ -1614,7 +1703,8 @@
           <div class="edu-dot"></div>
           <div class="edu-content">
             <div class="edu-school">Sri Ravi Junior College</div>
-            <div class="edu-degree">Intermediate — Mathematics, Physics &amp; Chemistry · Kapulapalem · 2020 - 2022</div>
+            <div class="edu-degree">Intermediate — Mathematics, Physics &amp; Chemistry · Kapulapalem · 2020 - 2022
+            </div>
             <span class="edu-score">Score: 70%</span>
           </div>
         </div>
